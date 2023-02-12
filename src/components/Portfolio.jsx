@@ -1,10 +1,10 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactparallax from "../assets/portfolio/reactParallax.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import calculator from "../assets/portfolio/calculator.png";
+import clock from "../assets/portfolio/clock.png";
+import news from "../assets/portfolio/news.png";
+import tictac from "../assets/portfolio/tictac.png";
+import gym from "../assets/portfolio/gym.png";
+import food from "../assets/portfolio/food.png";
 
 const Portfolio = () => {
 
@@ -12,28 +12,40 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct,
+            src: news,
+            href: 'https://github.com/bk408/NewsWorld-React',
         },
         {
             id: 2,
-            src: reactparallax,
+            src: calculator,
+            href: 'https://github.com/bk408/Calculate-me',
+            nhref: 'https://amazecalculateme.netlify.app',
         },
         {
             id: 3,
-            src: navbar,
+            src: clock,
+            href: 'https://github.com/bk408/Analog-clock',
+            nhref: 'https://bkanlogclock.netlify.app',
         },
         {
             id: 4,
-            src: reactSmooth,
+            src: gym,
+            href: 'https://github.com/bk408/Local-Gym-website',
+            nhref: 'https://bkfitness.netlify.app',
         },
         {
             id: 5,
-            src: installNode,
+            src: food,
+            href: 'https://github.com/bk408/MyOnlineMeal.com',
+            nhref: 'https://mynewonlinemeal.netlify.app',
         },
         {
             id: 6,
-            src: reactWeather,
+            src: tictac,
+            href: 'https://github.com/bk408/Tic-Tac-Toe',
+            nhref: 'https://amazetictactoe.netlify.app',
         },
+        
     ]
   return (
     <div name="portfolio" className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen ">
@@ -50,12 +62,17 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
             {
-        portfolios.map(({id, src}) => (
+        portfolios.map(({id, src, href, nhref }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
             <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
             <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a href={nhref} target="_blank" rel="noreferrer">Demo</a>
+                </button>
+              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a href={href} target="_blank" rel="noreferrer">Code
+                </a>
+                </button>
             </div>
           </div>
         ))
