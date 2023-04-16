@@ -1,10 +1,11 @@
 import React from "react";
-import calculator from "../assets/portfolio/calculator.png";
-import clock from "../assets/portfolio/clock.png";
-import news from "../assets/portfolio/news.png";
-import tictac from "../assets/portfolio/tictac.png";
-import gym from "../assets/portfolio/gym.png";
-import food from "../assets/portfolio/food.png";
+import e_kart from "../assets/portfolio/e_kart.png";
+import tictactoe from "../assets/portfolio/tictactoe.png";
+import quiz from "../assets/portfolio/quiz.png";
+import budget from "../assets/portfolio/budget.png";
+import joke from "../assets/portfolio/joke.png";
+import custom_music from "../assets/portfolio/custom_music.png";
+
 
 const Portfolio = () => {
 
@@ -12,38 +13,39 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: news,
-            href: 'https://github.com/bk408/NewsWorld-React',
+            src: e_kart,
+            href: 'https://github.com/bk408/E-kart-React-app',
+            
         },
         {
             id: 2,
-            src: calculator,
-            href: 'https://github.com/bk408/Calculate-me',
-            nhref: 'https://amazecalculateme.netlify.app',
+            src: budget,
+            href: 'https://github.com/bk408/Budget-app',
+            nhref: 'https://amzbudget-app.netlify.app/',
         },
         {
             id: 3,
-            src: clock,
-            href: 'https://github.com/bk408/Analog-clock',
-            nhref: 'https://bkanlogclock.netlify.app',
+            src: custom_music,
+            href: 'https://github.com/bk408/custom-music-player',
+            nhref: 'https://custommusic-player.netlify.app/',
         },
         {
             id: 4,
-            src: gym,
-            href: 'https://github.com/bk408/Local-Gym-website',
-            nhref: 'https://bkfitness.netlify.app',
+            src: joke,
+            href: 'https://github.com/bk408/Random-joke-generator',
+            nhref: 'https://randomjoke-generator.netlify.app/',
         },
         {
             id: 5,
-            src: food,
-            href: 'https://github.com/bk408/MyOnlineMeal.com',
-            nhref: 'https://mynewonlinemeal.netlify.app',
+            src: quiz,
+            href: 'https://github.com/bk408/quiz-app',
+            nhref: 'https://quizapphcj.netlify.app/',
         },
         {
             id: 6,
-            src: tictac,
-            href: 'https://github.com/bk408/Tic-Tac-Toe',
-            nhref: 'https://amazetictactoe.netlify.app',
+            src: tictactoe,
+            href: 'https://github.com/bk408/tic-tac-toe-game',
+            nhref: 'https://amztic-tac-toe-game.netlify.app/',
         },
         
     ]
@@ -73,6 +75,7 @@ const Portfolio = () => {
                 <a href={href} target="_blank" rel="noreferrer">Code
                 </a>
                 </button>
+
             </div>
           </div>
         ))
