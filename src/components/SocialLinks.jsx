@@ -14,7 +14,7 @@ const SocialLinks = () => {
                 LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/bhavya-khatri-12a046131/',
             style: 'rounded-tr-md',
         },
         {
